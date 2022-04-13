@@ -13,7 +13,7 @@ function App() {
     <div >
       
       <Routes >
-            <Route path="/portfolio-react-npysklyw/" element={<Home/>} />
+            <Route path="/portfolio-react-npysklyw" element={<Home/>} />
             <Route path="/portfolio-react-npysklyw/portfolio"  element={<Portfolio/>} />
             <Route path="/portfolio-react-npysklyw/education"  element={<Education/>}/>
             <Route path="/portfolio-react-npysklyw/projects"  element={<Projects/>}/>
