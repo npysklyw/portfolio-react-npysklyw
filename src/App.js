@@ -12,7 +12,7 @@ function App() {
   return (
     <div >
       
-      <Routes>
+      <Routes basename="/portfolio-react-npysklyw">
             <Route path="/" element={<Home/>} />
             <Route path="/portfolio"  element={<Portfolio/>} />
             <Route path="/education"  element={<Education/>}/>
