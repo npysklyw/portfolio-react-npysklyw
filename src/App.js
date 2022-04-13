@@ -5,19 +5,20 @@ import { Education } from './Education/Education';
 import {Projects} from "./Projects/Projects";
 import {
   Route,
-  Routes
+  Routes,
+  HashRouter
 } from 'react-router-dom'
 
 function App() {
   return (
     <div >
       
-      <Routes basename="/portfolio-react-npysklyw">
+      <HashRouter basename="/">
             <Route path="/" element={<Home/>} />
             <Route path="/portfolio"  element={<Portfolio/>} />
             <Route path="/education"  element={<Education/>}/>
             <Route path="/projects"  element={<Projects/>}/>
-          </Routes>
+          </HashRouter>
      
     </div>
   );
