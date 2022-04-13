@@ -5,20 +5,22 @@ import { Education } from './Education/Education';
 import {Projects} from "./Projects/Projects";
 import {
   Route,
-  Routes
+  Routes,
+  HashRouter
 } from 'react-router-dom'
 
 function App() {
   return (
     <div >
       
+      <HashRouter basename="/">
       <Routes >
-            <Route path="/portfolio-react-npysklyw" element={<Home/>} />
-            <Route path="/portfolio-react-npysklyw/portfolio"  element={<Portfolio/>} />
-            <Route path="/portfolio-react-npysklyw/education"  element={<Education/>}/>
-            <Route path="/portfolio-react-npysklyw/projects"  element={<Projects/>}/>
+            <Route path="/" element={<Home/>} />
+            <Route path="/portfolio"  element={<Portfolio/>} />
+            <Route path="/education"  element={<Education/>}/>
+            <Route path="/projects"  element={<Projects/>}/>
           </Routes>
-     
+          </HashRouter>
     </div>
   );
 }
